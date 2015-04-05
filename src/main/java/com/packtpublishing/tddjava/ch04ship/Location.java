@@ -1,5 +1,6 @@
 package com.packtpublishing.tddjava.ch04ship;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Location {
@@ -33,10 +34,16 @@ public class Location {
         this.direction = direction;
     }
 
+    public boolean forward() {
+        return move(FORWARD, new Point(100, 100), new ArrayList<>());
+    }
     public boolean forward(Point max, List<Point> obstacles) {
         return move(FORWARD, max, obstacles);
     }
 
+    public boolean backward() {
+        return move(BACKWARD, new Point(100, 100), new ArrayList<>());
+    }
     public boolean backward(Point max, List<Point> obstacles) {
         return move(BACKWARD, max, obstacles);
     }
