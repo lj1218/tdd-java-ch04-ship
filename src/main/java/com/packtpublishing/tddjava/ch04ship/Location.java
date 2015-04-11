@@ -37,12 +37,18 @@ public class Location {
     public boolean forward() {
         return move(FORWARD, new Point(100, 100), new ArrayList<>());
     }
+    public boolean forward(Point max) {
+        return move(FORWARD, max, new ArrayList<>());
+    }
     public boolean forward(Point max, List<Point> obstacles) {
         return move(FORWARD, max, obstacles);
     }
 
     public boolean backward() {
         return move(BACKWARD, new Point(100, 100), new ArrayList<>());
+    }
+    public boolean backward(Point max) {
+        return move(BACKWARD, max, new ArrayList<>());
     }
     public boolean backward(Point max, List<Point> obstacles) {
         return move(BACKWARD, max, obstacles);
