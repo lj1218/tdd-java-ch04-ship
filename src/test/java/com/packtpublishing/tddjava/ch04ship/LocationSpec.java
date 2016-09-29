@@ -36,48 +36,48 @@ public class LocationSpec {
         assertEquals(location.getDirection(), direction);
     }
 
-    public void givenDirectionNWhenForwardThanYDecreases() {
+    public void givenDirectionNWhenForwardThenYDecreases() {
         location.forward(max, obstacles);
         assertEquals(location.getY(), y - 1);
     }
 
-    public void givenDirectionSWhenForwardThanYIncreases() {
+    public void givenDirectionSWhenForwardThenYIncreases() {
         location.setDirection(Direction.SOUTH);
         location.forward(max, obstacles);
         assertEquals(location.getY(), y + 1);
     }
 
-    public void givenDirectionEWhenForwardThanXIncreases() {
+    public void givenDirectionEWhenForwardThenXIncreases() {
         location.setDirection(Direction.EAST);
         location.forward(max, obstacles);
         assertEquals(location.getX(), x + 1);
     }
 
-    public void givenDirectionWWhenForwardThanXDecreases() {
+    public void givenDirectionWWhenForwardThenXDecreases() {
         location.setDirection(Direction.WEST);
         location.forward(max, obstacles);
         assertEquals(location.getX(), x - 1);
     }
 
-    public void givenDirectionNWhenBackwardThanYIncreases() {
+    public void givenDirectionNWhenBackwardThenYIncreases() {
         location.setDirection(Direction.NORTH);
         location.backward(max, obstacles);
         assertEquals(location.getY(), y + 1);
     }
 
-    public void givenDirectionSWhenBackwardThanYDecreases() {
+    public void givenDirectionSWhenBackwardThenYDecreases() {
         location.setDirection(Direction.SOUTH);
         location.backward(max, obstacles);
         assertEquals(location.getY(), y - 1);
     }
 
-    public void givenDirectionEWhenBackwardThanXDecreases() {
+    public void givenDirectionEWhenBackwardThenXDecreases() {
         location.setDirection(Direction.EAST);
         location.backward(max, obstacles);
         assertEquals(location.getX(), x - 1);
     }
 
-    public void givenDirectionWWhenBackwardThanXIncreases() {
+    public void givenDirectionWWhenBackwardThenXIncreases() {
         location.setDirection(Direction.WEST);
         location.backward(max, obstacles);
         assertEquals(location.getX(), x + 1);
