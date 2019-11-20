@@ -17,3 +17,5 @@ Req. 04: The ship can receive a string with commands ("lrfb" is equivalent to le
 Req. 05: Earth, as any other planet is a sphere. Implement wrapping from one edge of the grid to another.
 
 Req. 06: Not the whole planet consists of seas. Roughly 30% is surface are islands and continents. Implement surface detection before each move to a new position. If a command encounters surface, the ship aborts the move, stays on the current position and reports the obstacle.
+
+**Reference:** [https://bitbucket.org/vfarcic/tdd-java-ch04-ship.git](https://bitbucket.org/vfarcic/tdd-java-ch04-ship.git)
